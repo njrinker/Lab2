@@ -19,9 +19,6 @@
         </header>
         <hr>
         <main>
-            <audio controls>
-                <source src="audio/Hi.mp3" type="audio/mp3">
-            </audio>
             <section id="entry1">
                 <h3>Monday, April 5th</h3>
                 <p>Today I accompolished these things:</p>
@@ -33,7 +30,7 @@
                     <li>Finished off my day with some refreshing schoolwork</li>
                 </ul>
                 <p>But hey, it's <em>only</em> the second week, so it should only get <b>better</b> from here on out. Anyways here's a meme I like:</p>
-                <img src="screenshots/free.jpg" height="400px">
+                <img src="screenshots/free.jpg" height="400" alt="A meme">
             </section>
             <br>
             <section id="entry2">
@@ -46,8 +43,9 @@
                 </ol>
                 <p><strong>Hey!</strong> I actually got that all done rather quick, <i>if I do say so myself.</i> 
                     Now what? Maybe I should listen to some music. Here's one that reminds me of my teenage years:</p>
-                <iframe width="320" height="180" src="https://www.youtube.com/embed/dvgZkm1xWPE" title="YouTube video player" 
-                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <audio controls>
+                    <source src="audio/Hi.mp3" type="audio/mp3">
+                </audio>
                 </section>
             <br>
             <section id="entry3">
@@ -78,22 +76,22 @@
                 <h3>Your turn!</h3>
                 <form>
                     <fieldset>
-                        <input type="checkbox" name="check">
+                        <input type="checkbox" id="check">
                         <label for="check">I am not a robot</label>
                         <br>
-                        <label for="verify">Are you really me?</label>
-                        <input type="radio" name="verify"/>Yes
-                        <input type="radio" name="verify"/>No
-                        <input type="radio" name="verify"/>Wouldn't you like to know, bucko?
+                        <p>Are you really me?</p>
+                        <input type="radio" id="verify1"/>Yes
+                        <input type="radio" id="verify2"/>No
+                        <input type="radio" id="verify3"/>Wouldn't you like to know, bucko?
                         <br>
                         <label for="sig">Whatever, just give me an electronic signature to verify.</label>
-                        <input type="text" name="sig">
+                        <input type="text" id="sig">
                         <br>
                         <label for="date">Don't forget the date!</label>
-                        <input type="date" name="date">
+                        <input type="date" id="date">
                         <br>
                         <p>Alright, now you can write the journal:</p>
-                        <textarea name="entry"></textarea>
+                        <textarea id="entry"></textarea>
                         <br>
                         <label for="mood">How are you feeling?</label>
                         <input list="moods" name="mood" id="mood">
